@@ -15,7 +15,7 @@ public class BrickRotater : MonoBehaviour {
         
     }
 
-    void FixedUpdate() {
+    void Update() {
         if (OVRInput.GetDown(rotate_ccw)) {
             rotation -= 90;
             SoundPlayer sp = (Instantiate(Resources.Load("SoundPlayer"), transform.position, Quaternion.identity) as GameObject).GetComponent<SoundPlayer>();

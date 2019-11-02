@@ -22,7 +22,7 @@ public class BrickPlacerTool : MonoBehaviour {
 
     }
 
-    void FixedUpdate() {
+    void Update() {
 
         brick_pos = grid.GetNearestPointOnGrid(owner.transform.position);
         brick_rot = Quaternion.Euler(new Vector3(-90f, GetComponent<BrickRotater>().rotation, 0f));
